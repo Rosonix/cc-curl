@@ -28,3 +28,4 @@ export LIBS=" -lssl -lcrypto -lz"
     --with-ca-bundle=/etc/ssl/certs/ca-certificates.crt
 make
 make install
+cp /etc/ssl/certs/ca-certificates.crt "${OUT_DIR}/ssl/certs"
